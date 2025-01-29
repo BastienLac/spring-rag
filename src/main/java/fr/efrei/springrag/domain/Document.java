@@ -4,6 +4,10 @@ import jakarta.persistence.*;
 
 @Entity
 public class Document {
+    public Long getId() {
+        return id;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(nullable = false)
